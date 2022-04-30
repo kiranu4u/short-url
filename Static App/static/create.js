@@ -14,7 +14,7 @@ form.addEventListener("submit",(e) => {
     }
     
     //replace with your API endpoint to generate short url
-    var baseURL = "<Your rest endpoint>";
+    var baseURL = "https://shorturlpoc.azurewebsites.net/api/GenerateShortUrl";
     var request = new XMLHttpRequest();
 
     request.onreadystatechange = function(){
@@ -40,7 +40,7 @@ form.addEventListener("submit",(e) => {
     }
     request.open('POST',baseURL,false)
     //optional, depends on your request
-    request.setRequestHeader("Ocp-Apim-Subscription-Key","<API key>")
+    //request.setRequestHeader("Ocp-Apim-Subscription-Key","<API key>")
     request.setRequestHeader("Content-Type","application/json")
     request.send(JSON.stringify(data))
 })
