@@ -1,8 +1,7 @@
 //check authentication status
 const url = window.location.protocol + '//' + window.location.hostname + '/.auth/me';
         console.log(url);
-        window.location="/create"
-/*        try{
+        try{
             var request = new XMLHttpRequest();
             request.open('GET',url,false),
             request.send();
@@ -19,4 +18,4 @@ const url = window.location.protocol + '//' + window.location.hostname + '/.auth
         }
         catch(err){
             console.log(err.message);
-        }*/
+        }
