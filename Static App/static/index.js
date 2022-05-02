@@ -1,6 +1,6 @@
 //from parameters query full URL
 var shorturl = window.location.pathname.substr(1);
-var baseURL = "https://shorturlpoc.azurewebsites.net/api/GetFullURL?";
+var baseURL = "https://shorturlpoc.azurewebsites.net/api/GetFullURL?alias=";
 var requestURL = baseURL.concat(shorturl);
 
 var request = new XMLHttpRequest()
