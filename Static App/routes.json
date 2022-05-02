@@ -11,8 +11,7 @@
       },
       {
         "route": "/create",
-        "serve": "create.html",
-        "allowedRoles": ["Creator"]
+        "serve": "create.html"
       },
       {
         "route": "/*",
