@@ -5,6 +5,7 @@ var requestURL = baseURL.concat(shorturl);
 alert(shorturl.length);
 var request = new XMLHttpRequest()
 request.open('GET',requestURL,false)
+request.timeout = 15000;
 //define request header
 //request.setRequestHeader("Ocp-Apim-Subscription-Key","<API key>")
 request.send();
