@@ -4,7 +4,7 @@ var baseURL = "https://dev1-sre-apim.azure-api.net/shorturl/GetFullURL?alias=";
 var requestURL = baseURL.concat(shorturl);
 alert(shorturl.length);
 var request = new XMLHttpRequest()
-request.open('GET',requestURL,true)
+request.open('GET',requestURL,false)
 //define request header
 //request.setRequestHeader("Ocp-Apim-Subscription-Key","<API key>")
 request.send();
