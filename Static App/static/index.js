@@ -2,12 +2,12 @@
 var shorturl = window.location.pathname.substr(1);
 var baseURL = "https://dev1-sre-apim.azure-api.net/shorturl/GetFullURL?alias=";
 var requestURL = baseURL.concat(shorturl);
-alert(shorturl.length);
 var request = new XMLHttpRequest()
 request.open('GET',requestURL,false)
-request.timeout = 15000;
+request.timeout = 15000
 //define request header
 //request.setRequestHeader("Ocp-Apim-Subscription-Key","<API key>")
+request.setRequestHeader("Access-Control-Allow-Origin","*")
 request.send();
 alert(request.responseText);
 if(request.responseText.length > 0){
