@@ -6,7 +6,9 @@ var request = new XMLHttpRequest()
 request.open('GET',requestURL,false)
 //define request header
 //request.setRequestHeader("Ocp-Apim-Subscription-Key","<API key>")
-request.setRequestHeader("Access-Control-Allow-Origin","*")
+request.setRequestHeader('Access-Control-Allow-Origin','*')
+request.setRequestHeader('Access-Control-Allow-Methods','GET')
+
 request.send();
 alert(request.responseText)
 if(request.responseText.length > 0){
