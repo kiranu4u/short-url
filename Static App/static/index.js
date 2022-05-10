@@ -8,7 +8,6 @@ request.open('GET',requestURL,false)
 //define request header
 //request.setRequestHeader("Ocp-Apim-Subscription-Key","<API key>")
 request.send();
-alert('');
 alert(shorturl.length);
 alert(request.responseText);
 if(request.responseText.length > 0){
