@@ -11,7 +11,6 @@ request.open('GET',requestURL,false)
 //request.setRequestHeader('Access-Control-Allow-Methods','GET')
 
 request.send();
-alert(request.responseText)
 if(request.responseText.length > 0){
     window.location=request.responseText
 }
