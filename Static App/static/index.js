@@ -6,7 +6,7 @@ var request = new XMLHttpRequest()
 request.open('GET',requestURL,false)
 //define request header
 //request.setRequestHeader("Ocp-Apim-Subscription-Key","<API key>")
-request.setRequestHeader('Access-Control-Allow-Origin','https://wonderful-pebble-0f20c8810.1.azurestaticapps.net')
+request.setRequestHeader('Access-Control-Allow-Origin','*')
 request.setRequestHeader('Access-Control-Allow-Methods','GET')
 
 
